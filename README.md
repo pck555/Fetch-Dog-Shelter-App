@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# Fetch Dog Shelter App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🐶 Overview
 
-## Available Scripts
+Fetch Dog Shelter App is a web-based application that helps users find adoptable dogs based on breed, age, and location. Users can browse a list of available dogs, mark favorites, and generate a match with their perfect furry friend.
 
-In the project directory, you can run:
+### 🌐 Live Demo
 
-### `npm start`
+🔗 [Fetch Dog Shelter App](https://fetch-dog-shelter-app.onrender.com/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 💁️ Project Structure
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+src/
+ ├── assets/                # Static assets like images
+ ├── components/            # Reusable UI components
+ │   ├── BreedFilter.js
+ │   ├── DogCard.js
+ │   ├── DogGrid.js
+ │   ├── LogoutButton.js
+ │   ├── MatchDisplay.js
+ │   ├── PaginationControls.js
+ │   ├── SortButtons.js
+ ├── pages/                 # Page-level components
+ │   ├── Login/
+ │   │   ├── index.js
+ │   │   ├── Login.css
+ │   ├── Search/
+ │   │   ├── index.js
+ │   │   ├── Search.css
+ ├── services/              # API service layer
+ │   ├── apiService.js
+ ├── App.js                 # Main application file
+ ├── index.js               # Entry point
+```
 
-### `npm test`
+## 🚀 Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 🔍 **Search Dogs**: Users can filter dogs by breed.
+- 💖 **Favorite Dogs**: Users can mark favorite dogs.
+- 🎯 **Matchmaking**: The system generates a match based on selected favorites.
+- 🔒 **User Authentication**: Simple login with name and email.
+- 🔄 **Pagination**: Fetch paginated dog lists.
 
-### `npm run build`
+## 🔧 Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend**: React.js, React Router
+- **UI Components**: Material UI, Styled-Components, Emotion
+- **State Management**: React Hooks
+- **HTTP Requests**: Axios
+- **Toast Notifications**: React-Toastify
+- **API**: Fetch Dog Shelter API
+- **Hosting**: Render
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/fetch-dog-shelter-app.git
+   cd fetch-dog-shelter-app
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+4. Open `http://localhost:3000` in your browser.
 
-### `npm run eject`
+## 🎯 Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Login using your **Name** and **Email**.
+2. Browse dogs and filter by breed.
+3. Mark your favorites.
+4. Click **Generate Match** to find your best match.
+5. Logout when you're done!
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 💡 Future Improvements
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- 📌 Implement a backend authentication system.
+- 📷 Add more images and details for dogs.
+- 🐾 Improve matchmaking algorithm.
+- 🌎 Enable geolocation-based searches.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🤝 Contributing
 
-## Learn More
+Contributions are welcome! If you have ideas or find issues, feel free to open an issue or submit a pull request.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📄 License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT License © 2024 Fetch Dog Shelter App
