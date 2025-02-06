@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { login } from "../../services/apiService";
 import "./Login.css";
 import cuteDogImg from "../../assets/f_photo.jpg";
 
@@ -13,19 +13,13 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
-
     try {
-      const response = await axios.post(
-        "https://frontend-take-home-service.fetch.com/auth/login",
-        { name, email },
-        { withCredentials: true }
-      );
-
-      if (response.status === 200) {
+      const success = await login(name, email);
+      if (success) {
         navigate("/search");
       }
     } catch (error) {
-      setError("Login failed. Please try again.");
+      setError(error.message);
     }
   };
 

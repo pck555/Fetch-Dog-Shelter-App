@@ -160,6 +160,9 @@ button:disabled {
   align-items: center;
   margin-top: 20px;
 }
+
 .match-button {
   margin-left: 10px;
 }
+
+.filter-container {}
